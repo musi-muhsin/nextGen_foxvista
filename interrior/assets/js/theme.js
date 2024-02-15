@@ -349,7 +349,7 @@
             smartSpeed: 2000,
             dots: true,
             autoplay: true,
-            autoplayTimeout: 4000,
+            autoplayTimeout: 2000,
             center: true,
             responsive: {
                 0: {
@@ -373,27 +373,43 @@
     function ss_carousel() {
         var owl = $(".ss-carousel");
         owl.owlCarousel({
-            loop: true,
             margin: 0,
+            loop:false,
+            autoplay: false,
+            mouseDrag : false,
             responsiveClass: true,
             navigation: true,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
             nav: true,
             items: 5,
             smartSpeed: 2000,
-            dots: true,
-            autoplay: true,
+            dots: false,
             autoplayTimeout: 4000,
-            center: true,
+            // center:
             responsive: {
                 0: {
-                    items: 1
+                    items: 1,
+                    autoplay: true,
+                       mouseDrag : true,
+            loop: true,
+
                 },
                 480: {
-                    items: 3
+                    items: 3,
+                    autoplay: true,
+                   loop: true,
+                      mouseDrag : true,
+                    
                 },
                 760: {
-                    items: 6
+                    items: 4,
+                    autoplay: true,
+                    loop: true,
+                       mouseDrag : true,
+                },
+                992: {
+                    items: 5,
+                    mouseDrag : false,
                 }
             }
         });

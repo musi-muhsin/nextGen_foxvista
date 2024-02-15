@@ -1,0 +1,51 @@
+.navbar li a{
+    position: relative;
+    padding: 0;
+}
+.navbar li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    height: 3px;
+    width: 0;
+    background-color: #F08B20;
+}
+.navbar li a:hover{
+   padding: 0;
+   color: #000000;
+   font-weight: 600;
+}
+.navbar li a.active{
+    color: #F08B20;
+}
+.navbar li a:hover::before,
+.navbar li a.active::before{
+    transition: width 0.3s ease-in-out;
+    width: 100%;
+}
+.hero-content .button{
+    gap:15px;
+} 
+.hero-content .button .line{
+   width: 50px;
+   height: 2px;
+   background-color: #fff;
+} 
+.hero-content .button a{
+    background-color: #fff;
+    height: 55px;
+    width: 55px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} 
+.hero-content .button a:hover svg{
+   color: #000
+
+} 
+.hero-content h5{
+     font-weight: 500;
+} 

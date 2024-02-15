@@ -76,7 +76,7 @@ header.navbar-fixed-top {
   animation-duration: 0.8s;
   animation-name: fadeInDown;
   animation-timing-function: ease-in-out;
-  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.189);
   left: 0;
   position: fixed !important;
   right: 0;
@@ -1010,7 +1010,7 @@ a#scrollUp {
 
 .interior-header.navbar-fixed-top {
   padding: 5px 0px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #fff;
 }
 
 .interior-header.navbar-fixed-top .logo-box {
@@ -1044,6 +1044,7 @@ a#scrollUp {
 
 .interior-menu li {
   border: none;
+  padding: 11px 20px;
 }
 
 .interior-menu li a {
@@ -1094,7 +1095,7 @@ a#scrollUp {
   overflow: hidden;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: #fff;
   border-radius: 5px;
   margin: 10px auto;
 }
@@ -1398,17 +1399,17 @@ nav.isidenav ul li a span.nav-text {
 /*  Hero 1 Style
 /*----------------------------------------*/
 .heroV1 {
-  background: rgba(0, 0, 0, 0) url(../img/bg/bg-1.jpg) repeat scroll 0 0;
+  background:  url(../img/bg/hero-bg.png) repeat scroll 0 0;
   overflow: hidden;
   background-position: center center;
   background-size: cover;
-  padding: 84px 0 0;
+  padding: 150px 0 0;
   position: relative;
   /* height: 100vh; */
   z-index: 1;
 }
 
-.heroV1::before {
+/* .heroV1::before {
   background: rgba(0, 0, 0, 0.5) repeat scroll 0 0;
   content: "";
   height: 100%;
@@ -1418,12 +1419,15 @@ nav.isidenav ul li a span.nav-text {
   top: 0;
   width: 100%;
   z-index: -1;
-}
+} */
 
 .hero-content {
   margin-bottom: 50px;
-  text-align: center;
+  /* text-align: center; */
   padding: 100px 0px 0px;
+  display: flex ;
+  flex-direction: column; 
+  gap: 70px;
 }
 
 .hero-content p {
@@ -1437,16 +1441,16 @@ nav.isidenav ul li a span.nav-text {
   margin: auto;
   padding: 15px 0px;
   font-size: 60px;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 80px;
-  letter-spacing: 10px;
+  letter-spacing: 2px;
   color: #ffffff;
 }
 
 .hero-content .hero-text {
   position: relative;
   max-width: 880px;
-  margin: 0 auto;
+  margin: 0 0;
 }
 
 .more-btn {
@@ -1853,9 +1857,9 @@ nav.isidenav ul li a span.nav-text {
 /*  About Style 2
 /*----------------------------------------*/
 .about-us-area-2 {
-  background: rgba(0, 0, 0, 0) url(../img/bg/au2-bg.jpg) repeat scroll 0 0;
+  /* background: rgba(0, 0, 0, 0) url(../img/bg/au2-bg.jpg) repeat scroll 0 0; */
   overflow: hidden;
-  padding: 84px 0 25px;
+  padding: 50px 0;
   position: relative;
 }
 
@@ -1904,14 +1908,16 @@ nav.isidenav ul li a span.nav-text {
 /*  About Style 3
 /*----------------------------------------*/
 .about-us3-area {
-  padding: 50px 0px;
   margin: 80px auto;
 }
 
 .about-us3-content-left {
-  background: rgba(0, 0, 0, 0) url(../img/banner/au3-img.jpg) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) url(../img/banner/au3-img.png) repeat scroll 0 0;
   height: 500px;
   position: relative;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .au3-ltext-box {
@@ -2015,19 +2021,21 @@ nav.isidenav ul li a span.nav-text {
 }
 
 .au3-info {
-  margin-left: 55px;
+  margin: 55px;
+  margin-block: auto;
 }
 
 .au3-info h3 {
   font-size: 24px;
-  color: #636363;
+  color: #ffffff;
   margin: 10px 0px;
 }
 
 .au3-info p {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
-  color: #7d7d7d;
+  color: #ffffff;
+  max-width: 300px;
 }
 
 .why-choose-left {
@@ -3375,7 +3383,6 @@ span.progressText {
 /*  Insta Carousel Style
 /*----------------------------------------*/
 .social-area {
-  background-color: #f1f1f1;
   margin: 25px 0px 0px 0px;
 }
 
@@ -3402,7 +3409,8 @@ span.progressText {
 }
 
 .ss-carousel .item {
-  padding: 5px;
+  margin: 5px;
+  overflow: hidden;
 }
 
 .social-slider-content .owl-nav {
@@ -5592,8 +5600,7 @@ ul.sp-list li {
 /*  Partners Logo 1 Style
 /*----------------------------------------*/
 .partner-logo {
-  margin-bottom: 20px;
-  padding: 20px 0px;
+  padding: 30px 20px;
 }
 
 .partner-logo .owl-dots {
@@ -7132,9 +7139,9 @@ html[dir="rtl"] .service-subscribe-area {
 
   .interior-menu {
     position: fixed !important;
-    top: 65px !important;
+    top: 75px !important;
     left: 0px !important;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #fff;
     width: 100% !important;
     height: 350px;
     overflow-y: scroll;
