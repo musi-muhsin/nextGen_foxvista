@@ -200,7 +200,7 @@ Table Of Contents
 --------------------------
 */
 body {
-  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Jost", sans-serif; */
 }
 
 h1,
@@ -210,13 +210,13 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 700;
   color: #000;
   letter-spacing: 1.5px;
 }
 
-h1 a,
+/* h1 a,
 h2 a,
 h3 a,
 h4 a,
@@ -224,7 +224,7 @@ h5 a,
 h6 a {
   font-weight: inherit;
   font-family: "Josefin Sans", sans-serif;
-}
+} */
 
 h1 {
   font-size: 36px;
@@ -261,7 +261,7 @@ h6 {
 }
 
 p {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 0;
@@ -274,7 +274,7 @@ p img {
 }
 
 span {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* em and strong */
@@ -368,7 +368,7 @@ a:visited {
 
 a:hover,
 a:active {
-  color: #00b0ff;
+  /* color: #00b0ff; */
   text-decoration: none;
   outline: 0;
 }
@@ -914,7 +914,7 @@ button:focus {
 a#scrollUp {
   bottom: 8px;
   right: 10px;
-  background-color: #f9ac80;
+  background-color: #f08b20;
   color: #fff;
   height: 35px;
   width: 35px;
@@ -1039,12 +1039,11 @@ a#scrollUp {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   box-shadow: none;
-  margin: 15px auto;
 }
 
 .interior-menu li {
   border: none;
-  padding: 11px 20px;
+  padding: 20px 30px;
 }
 
 .interior-menu li a {
@@ -1859,7 +1858,7 @@ nav.isidenav ul li a span.nav-text {
 .about-us-area-2 {
   /* background: rgba(0, 0, 0, 0) url(../img/bg/au2-bg.jpg) repeat scroll 0 0; */
   overflow: hidden;
-  padding: 50px 0;
+  padding: 40px 0;
   position: relative;
 }
 
@@ -1874,6 +1873,7 @@ nav.isidenav ul li a span.nav-text {
   padding: 40px 0px 30px;
   color: #4e4e4e;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .au2-left-text p {
@@ -1908,7 +1908,7 @@ nav.isidenav ul li a span.nav-text {
 /*  About Style 3
 /*----------------------------------------*/
 .about-us3-area {
-  margin: 80px auto;
+  margin: 50px auto;
 }
 
 .about-us3-content-left {
@@ -3409,7 +3409,6 @@ span.progressText {
 }
 
 .ss-carousel .item {
-  margin: 5px;
   overflow: hidden;
 }
 
@@ -6220,7 +6219,7 @@ ul.sp-list li {
 /*  Footer 1 Style
 /*----------------------------------------*/
 .footer-area {
-  padding: 50px 0px;
+  padding: 30px 0px;
 }
 
 .footer-logo {
@@ -6229,7 +6228,7 @@ ul.sp-list li {
 
 .footer-menu {
   padding: 15px 0px;
-  text-align: center;
+  text-align: end;
 }
 
 .footer-menu ul {
@@ -6244,11 +6243,12 @@ ul.sp-list li {
 
 .footer-menu ul li a, .footer-menu ul li span {
   font-size: 14px;
+  color: #fff;
 }
 
 .footer-social-icon {
   padding: 15px;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-social-icon ul {
@@ -6261,7 +6261,7 @@ ul.sp-list li {
 }
 
 .footer-social-icon ul li a {
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px;
 }
 
@@ -6870,7 +6870,7 @@ html[dir="rtl"] .service-subscribe-area {
   }
 
   .hero-content {
-    padding-top: 60px;
+    padding-top: 100px;
   }
 
   .hero-content h2 {
@@ -7117,7 +7117,7 @@ html[dir="rtl"] .service-subscribe-area {
   }
 
   .about-us3-area {
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
   }
 
   .about-us3-content {
@@ -7143,9 +7143,10 @@ html[dir="rtl"] .service-subscribe-area {
     left: 0px !important;
     background-color: #fff;
     width: 100% !important;
-    height: 350px;
+    height: fit-content;
     overflow-y: scroll;
     cursor: pointer;
+    padding: 10px;
   }
 
   .ihV3 .interior-menu-wrapper #interiorMenuV1 {

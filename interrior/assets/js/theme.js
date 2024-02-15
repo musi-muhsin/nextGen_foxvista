@@ -346,14 +346,14 @@
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
             nav: true,
             items: 5,
-            smartSpeed: 2000,
+            smartSpeed: 1500,
             dots: true,
             autoplay: true,
             autoplayTimeout: 2000,
-            center: true,
+            center: false,
             responsive: {
                 0: {
-                    items: 1
+                    items: 2
                 },
                 480: {
                     items: 3
@@ -388,9 +388,10 @@
             // center:
             responsive: {
                 0: {
-                    items: 1,
+                    items: 1.3,
                     autoplay: true,
                        mouseDrag : true,
+                       center : true,
             loop: true,
 
                 },
