@@ -63,7 +63,7 @@
 .owl-carousel .owl-item img {
     display: block;
     width: 100%;
-    transition: scale 0.5s ease-in-out;
+    transition:  0.5s ease-in-out;
 }
 .owl-carousel .owl-item img:hover {
     scale: 1.2;

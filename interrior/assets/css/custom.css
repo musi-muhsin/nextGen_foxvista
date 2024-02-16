@@ -71,7 +71,126 @@
 .au3-info p{
     margin-bottom: 70px;
 }
+.team3-author-img img{
+    border-radius: 50%;
+}
+.blog-details-head{
+    background: rgba(0, 0, 0, 0) url(../img/bg/bg-4.png) repeat scroll 0 0;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    padding: 85px 0 120px;
+    position: relative;
+    /* height: 100vh; */
+    z-index: 1;
+}
+.product-details-head{
+    background: rgba(0, 0, 0, 0) url(../img/bg/bg-5.png) repeat scroll 0 0;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    padding: 85px 0 120px;
+    position: relative;
+    /* height: 100vh; */
+    z-index: 1;
+}
+.product-page{
+    padding: 125px 0 0;
+}
+.product-page .item{
+background-color: #D9D9D9;
+border-radius: 25px;
+position: relative;
+margin-bottom: 30px;
+height: 90%;
+display: flex;
+align-items: center;
+overflow: hidden;
+}
+.product-page .item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.product-page .item h4{
+position: absolute;
+top: 25px;
+left: 25px;
+text-transform:uppercase;
+font-size: 24px;
+color: #fff;
+
+}
+.blog-details-head .text h4{
+    text-transform:uppercase;
+    font-size: 24px;
+}
+.portfolio-area  .product{
+    margin-bottom: 35px;
+    padding: 0 7px;
+}
+.portfolio-area  .product img{
+    border-radius: 20px;
+}
+.portfolio-area  .product h4{
+    text-transform:uppercase;
+    font-size: 18px;
+}
+.products-brands-details{
+    max-width: 700px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+}
+.products-brands-details h4{
+    position: relative;
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.products-brands-details h6{
+    position: relative;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: #515151;
+}
+.products-brands-details .brands{
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+}
+.products-brands-details .brands img{
+    width: 44%;
+    height: 100%;
+}
+
 @media only screen and (max-width: 768px){
+    .portfolio-area  .product{
+        padding: 0 15px;
+    }
+    
+    .products-brands-details .brands{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .products-brands-details .brands h4{
+        font-size: 24px;
+        letter-spacing: 0px;
+        line-height: 44px;
+    }
+    .products-brands-details .brands h6{
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 20px;
+    }
+    .products-brands-details .brands img{
+        width: 30%;
+        margin-inline: auto;
+    }
     .footer-bottom p{
         text-align: center;
 }
@@ -102,6 +221,9 @@
 }
 .au2-right-text {
     padding-top: 0;
+}
+.social-slider-content{
+    padding: 40px 0 0;
 }
 }
 

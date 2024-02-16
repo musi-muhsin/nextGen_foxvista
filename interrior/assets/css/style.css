@@ -262,7 +262,7 @@ h6 {
 
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   letter-spacing: 0;
   line-height: 28px;
@@ -1020,6 +1020,9 @@ a#scrollUp {
 .interior-menu-wrapper {
   position: relative;
   text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 #interiorMenuV1 {
@@ -1043,11 +1046,11 @@ a#scrollUp {
 
 .interior-menu li {
   border: none;
-  padding: 20px 30px;
+  padding:20px 25px;  
 }
 
 .interior-menu li a {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #000;
   font-weight: 600;
@@ -1055,7 +1058,7 @@ a#scrollUp {
 }
 
 .interior-menu li a:hover, .interior-menu li a.highlighted {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #dcdcdc;
   background-color: rgba(0, 0, 0, 0);
@@ -1096,7 +1099,6 @@ a#scrollUp {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #fff;
   border-radius: 5px;
-  margin: 10px auto;
 }
 
 /* hamburger icon */
@@ -1562,13 +1564,15 @@ nav.isidenav ul li a span.nav-text {
 /*  Hero 3 Style
 /*----------------------------------------*/
 .hero-area-3 {
-  background: rgba(0, 0, 0, 0) url(../img/bg/bg-3.jpg) repeat scroll 0 0;
+  background:  url(../img/bg/bg-3.jpg) repeat scroll 0 0;
   background-position: center center;
   background-size: cover;
   overflow: hidden;
   padding: 84px 0 0;
   position: relative;
-  min-height: 625px;
+  min-height: 715px;
+  display: flex ;
+  align-items: center;
 }
 
 .hero3-content {
@@ -1578,49 +1582,50 @@ nav.isidenav ul li a span.nav-text {
 
 .hero3-text {
   position: relative;
-  max-width: 660px;
+  max-width: 850px;
   margin: 0 auto;
   z-index: 1;
+  text-align: center;
 }
 
-.hero3-text:before {
+/* .hero3-text:before {
   position: absolute;
-  content: '';
+  content: '';368
   height: 140%;
   width: 500px;
   border: 1px solid #faad83;
   left: -100px;
   top: -12%;
   z-index: -1;
-}
+} */
 
 .hero3-text p {
   position: relative;
-  color: #555555;
-  font-family: 'Raleway', sans-serif;
-  font-size: 28px;
-  font-weight: 500;
+  color: #F9E7D3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 34px;
-  max-width: 400px;
-  padding: 15px 0px;
+
 }
 
 .hero3-text h2 {
   font-size: 60px;
-  color: #ffffff;
-  background-color: #faad83;
+  color: #F08B20;
   padding: 30px 10px;
-  line-height: 70px;
-  font-weight: 300;
+  line-height: 60px;
+  font-weight: 600;
   transition: .5s ease;
+  text-align: center;
 }
+
 
 /* ---------- Hero 3 Style END ---------- */
 /*----------------------------------------*/
 /*  Hero 4 Style
 /*----------------------------------------*/
 .heroV4 {
-  background: rgba(0, 0, 0, 0) url(../img/bg/bg-4.jpg) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) url(../img/blog/blog-singel-1.jpg) repeat scroll 0 0;
   overflow: hidden;
   background-position: center center;
   background-size: cover;
@@ -1869,10 +1874,10 @@ nav.isidenav ul li a span.nav-text {
 
 .au2-left-title h2 {
   line-height: initial;
-  font-size: 48px;
+  font-size: 38px;
   padding: 40px 0px 30px;
   color: #4e4e4e;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -1895,10 +1900,11 @@ nav.isidenav ul li a span.nav-text {
   font-size: 16px;
   color: #4e4e4e;
   margin-bottom: 15px;
+  font-weight: 500;
 }
 
 .au2-right-text a {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 500;
   text-decoration: underline;
 }
@@ -2295,17 +2301,20 @@ nav.isidenav ul li a span.nav-text {
 /*  About Us Page Style 1
 /*----------------------------------------*/
 .all-cpage-top-section {
-  background: rgba(0, 0, 0, 0) url(../img/bg/ap-cs-bg.jpg) repeat scroll 0 0;
+  background: #33302C url(../img/bg/contact-bg.png) no-repeat scroll 0 0;
   overflow: hidden;
   padding: 84px 0 0;
   position: relative;
+  background-size: contain;
 }
 
 .all-cpage-stitle {
-  margin: 120px 0px 100px;
-  text-align: center;
+  margin: auto 0;
   padding: 25px 15% 85px;
-  background-color: #ffffff;
+      display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-inline: auto;
 }
 
 .all-cpage-stitle p {
@@ -2320,27 +2329,24 @@ nav.isidenav ul li a span.nav-text {
 .all-cpage-stitle h3 {
   font-size: 48px;
   line-height: 55px;
-  color: #f9ad81;
-  font-weight: 300;
+  color: #fff;
+  font-weight: 600;
   transition: 0.5s ease;
+}
+.all-cpage-stitle h3 span:first-child{
+  margin-right: 50px;
+}
+.all-cpage-stitle h3 span:last-child{
+  margin-right: 50px;
 }
 
 .about-us-details-section {
-  margin-top: 100px;
+  padding: 70px 0;
   overflow: hidden;
   position: relative;
+  background-color: #33302C;
 }
 
-.about-us-details-section:before {
-  content: '';
-  position: absolute;
-  height: 350px;
-  width: 350px;
-  transform: rotate(45deg);
-  right: 5%;
-  top: 80px;
-  border: 4px solid #f2f2f2;
-}
 
 .aud-title h4 {
   font-size: 18px;
@@ -2354,9 +2360,9 @@ nav.isidenav ul li a span.nav-text {
 .aud-text h3 {
   font-size: 48px;
   line-height: initial;
-  font-weight: 300;
-  padding: 25px;
-  color: #242424;
+  font-weight: 600;
+  padding: 25px 0;
+  color: #ffffff;
 }
 
 .aud-title h4:after {
@@ -2371,19 +2377,10 @@ nav.isidenav ul li a span.nav-text {
 
 .aud-text p {
   position: relative;
-  font-size: 17px;
-  color: #959595;
-  padding: 25px 0px 25px 140px;
-}
-
-.aud-text p:before {
-  content: '';
-  position: absolute;
-  background: #faad83;
-  height: 2px;
-  width: 90px;
-  top: 40px;
-  left: 25px;
+  font-size: 16px;
+  color: #fff;
+  max-width: 450px;
+  margin-bottom: 25px;
 }
 
 .about-us-details-section .single-figure {
@@ -2708,7 +2705,7 @@ span.progressText {
 /*  Portfolio 1 Style
 /*----------------------------------------*/
 .porfolio-style-1 {
-  position: relative;
+  /* position: relative; */
   text-align: center;
 }
 
@@ -2740,7 +2737,7 @@ span.progressText {
 }
 
 .porfolio-style-1 .sbox_V1 .single-shuffle {
-  padding: 2px;
+  padding: 5px;
   position: relative;
   margin-bottom: 0px;
 }
@@ -3405,7 +3402,7 @@ span.progressText {
 }
 
 .social-slider-content {
-  padding: 40px 0px;
+  padding: 40px 0px ;
 }
 
 .ss-carousel .item {
@@ -3413,13 +3410,35 @@ span.progressText {
 }
 
 .social-slider-content .owl-nav {
-  display: none;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-20px);
+}
+.social-slider-content .owl-nav .owl-prev,
+.social-slider-content .owl-nav .owl-next {
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.social-slider-content .owl-nav .owl-prev {
+    position: absolute;
+    left: 15px;
+}
+.social-slider-content .owl-nav .owl-next {
+    position: absolute;
+    right: 15px;
 }
 
 .social-slider-content .owl-dots {
   text-align: center;
   padding-top: 40px;
 }
+
 
 .social-slider-content .owl-dot {
   position: relative;
@@ -4631,10 +4650,10 @@ h4.bs-cat-title {
 }
 
 .team3-title h2 {
-  font-size: 36px;
-  color: #faad83;
+  font-size: 48px;
+  color: #4e4e4e;
   margin: 25px 0px;
-  font-weight: 300;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 35px;
 }
@@ -4665,17 +4684,17 @@ h4.bs-cat-title {
 }
 
 .team3-author-info h4 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  color: #faad83;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #232323;
 }
 
 .team3-author-info p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 12px;
-  color: #7d7d7d;
-  font-style: italic;
-  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #3a3a3a;
+  /* font-style: italic; */
+  font-weight: 600;
 }
 
 .team3-author-info ul {
@@ -4761,6 +4780,9 @@ h4.bs-cat-title {
 
 .team-area-text {
   padding: 20px;
+}
+.team-area{
+  padding: 50px 0;
 }
 
 .ta-head {
@@ -5831,11 +5853,14 @@ ul.sp-list li {
 }
 
 .sc-text h3 {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  color: #464646;
+  color: #929292;
   padding: 10px 0px;
   text-transform: uppercase;
+}
+.sc-text span {
+  color: #E5E5E5;
 }
 
 .cform-top-text {
@@ -5855,6 +5880,9 @@ ul.sp-list li {
   text-align: center;
 }
 
+.contact-content-area form .form-control::placeholder {
+  color: #fff;
+}
 .contact-content-area form input {
   margin: 10px auto;
   border-radius: 0px;
@@ -5863,45 +5891,75 @@ ul.sp-list li {
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0px;
+  background-color: transparent;
+  color: #fff;
+}
+.contact-content-area form select {
+  margin: 10px auto;
+  border-radius: 0px;
+  border: 1px solid #dfdfdf;
+  height: 42px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px 5px;
+  color: #fff
 }
 
 .contact-content-area form textarea {
   margin: 10px auto;
   border-radius: 0px;
   border: 1px solid #dfdfdf;
+  background-color: transparent;
   height: 120px;
   font-size: 15px;
   font-weight: 300;
   padding: 10px 15px;
+  color: #fff;
+
 }
 
+.form-select:focus{
+    border-color: rgb(255, 255, 255);
+    outline: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
 .form-control:focus {
-  border-color: rgba(128, 130, 132, 0.31);
+  border-color: rgb(255, 255, 255);
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(54, 60, 64, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(80, 80, 80, 0.6);
+  background-color: transparent;
+  box-shadow: none;
+  color: #fff;
 }
 
 .contact-content-area form button {
-  color: #faad83;
-  margin: 20px auto;
+  background-color: #F08B20;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
   font-size: 18px;
-  background-color: #ffffff;
-  border: 2px solid #faad83;
-  padding: 10px 30px;
-  border-radius: 25px;
+  border: 2px solid #F08B20;
+  padding: 3px 19px;
+}
+.contact-content-area form svg {
+  transform: rotate(90deg);
 }
 
 .contact-content-area form button:hover, .contact-content-area form button:active, .contact-content-area form button:focus, .contact-content-area form button:active:hover {
-  color: #faad83;
-  margin: 20px auto;
+  background-color: #F08B20;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
   font-size: 18px;
-  background-color: #ffffff;
-  border: 2px solid #faad83;
-  padding: 10px 30px;
-  border-radius: 25px;
-  outline: none;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid #F08B20;
+  padding: 3px 19px;
 }
 
 .cf-msg {
@@ -7174,7 +7232,7 @@ html[dir="rtl"] .service-subscribe-area {
   }
 
   .interior-header.navbar-fixed-top .interiorMenuV1-btn {
-    margin-top: 15px;
+    margin-top: 0;
     margin-bottom: 0px;
   }
 
@@ -7282,12 +7340,12 @@ html[dir="rtl"] .service-subscribe-area {
   }
 
   .hero3-text h2 {
-    font-size: 36px;
+    font-size: 34px;
     line-height: 44px;
   }
 
   .hero3-text p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
   }
 
@@ -7384,7 +7442,8 @@ html[dir="rtl"] .service-subscribe-area {
 
   .all-cpage-stitle {
     margin-bottom: 40px;
-    margin-top: 90px;
+    margin-top: 0;
+    width: 185px;
   }
 
   .ihV3.navbar-fixed-top .interior-menu-wrapper {
