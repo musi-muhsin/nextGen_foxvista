@@ -1585,6 +1585,7 @@ nav.isidenav ul li a span.nav-text {
   margin: 0 auto;
   z-index: 1;
   text-align: center;
+  color-scheme: ;
 }
 
 /* .hero3-text:before {
@@ -1600,9 +1601,9 @@ nav.isidenav ul li a span.nav-text {
 
 .hero3-text p {
   position: relative;
-  color: #F9E7D3;
+  color: #fff;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 34px;
 
@@ -2376,7 +2377,7 @@ nav.isidenav ul li a span.nav-text {
 
 .aud-text p {
   position: relative;
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
   max-width: 450px;
   margin-bottom: 25px;
