@@ -1046,7 +1046,7 @@ a#scrollUp {
 
 .interior-menu li {
   border: none;
-  padding:20px 25px;  
+  padding:20px 15px;  
 }
 
 .interior-menu li a {
@@ -1428,7 +1428,7 @@ nav.isidenav ul li a span.nav-text {
   padding: 100px 0px 0px;
   display: flex ;
   flex-direction: column; 
-  gap: 70px;
+  gap: 100px;
 }
 
 .hero-content p {
@@ -1446,11 +1446,12 @@ nav.isidenav ul li a span.nav-text {
   line-height: 80px;
   letter-spacing: 2px;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .hero-content .hero-text {
   position: relative;
-  max-width: 880px;
+  max-width: 860px;
   margin: 0 0;
 }
 
@@ -1897,7 +1898,7 @@ nav.isidenav ul li a span.nav-text {
 }
 
 .au2-right-text p {
-  font-size: 16px;
+  font-size: 18px;
   color: #4e4e4e;
   margin-bottom: 15px;
   font-weight: 500;
@@ -2032,14 +2033,14 @@ nav.isidenav ul li a span.nav-text {
 }
 
 .au3-info h3 {
-  font-size: 24px;
+  font-size: 28px;
   color: #ffffff;
   margin: 10px 0px;
 }
 
 .au3-info p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
   color: #ffffff;
   max-width: 300px;
 }

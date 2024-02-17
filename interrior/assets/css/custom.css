@@ -26,18 +26,18 @@
     width: 100%;
 }
 .hero-content .button{
-    gap:15px;
+    gap:30px;
 } 
 .hero-content .button .line{
-   width: 50px;
+   width: 80px;
    height: 2px;
    background-color: #fff;
 } 
 .hero-content .button a{
     background-color: #fff;
-    height: 55px;
-    width: 55px;
-    border-radius: 35px;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,6 +49,7 @@
 } 
 .hero-content h5{
      font-weight: 500;
+     font-size: 25px;
 } 
 .footer-bottom p{
    font-size: 12px;
