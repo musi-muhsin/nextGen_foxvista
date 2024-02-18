@@ -1433,7 +1433,7 @@ nav.isidenav ul li a span.nav-text {
 
 .hero-content p {
   color: #ffffff;
-  font-family: Sacramento;
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   padding: 15px 0px;
 }
@@ -2306,14 +2306,15 @@ nav.isidenav ul li a span.nav-text {
   overflow: hidden;
   padding: 84px 0 0;
   position: relative;
-  background-size: contain;
+  background-size: cover;
 }
 
 .all-cpage-stitle {
   margin: auto 0;
-  padding: 25px 15% 85px;
+  padding: 25px 10% 85px;
       display: flex;
     flex-direction: column;
+    gap: 15px;
     width: 350px;
     margin-inline: auto;
 }
@@ -2328,7 +2329,7 @@ nav.isidenav ul li a span.nav-text {
 }
 
 .all-cpage-stitle h3 {
-  font-size: 48px;
+  font-size: 56px;
   line-height: 55px;
   color: #fff;
   font-weight: 600;
@@ -6729,7 +6730,7 @@ html[dir="rtl"] .service-subscribe-area {
 /* Medium Layout: 1280px. */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .interior-menu li a {
-    padding: 9px !important;
+    /* padding: 9px !important; */
   }
 
   .interior-menu li a.has-submenu {
@@ -7398,7 +7399,7 @@ html[dir="rtl"] .service-subscribe-area {
   }
 
   .all-cpage-stitle {
-    padding: 25px 25px 40px;
+    padding: 0;
   }
 
   .about-us-details-section .single-figure:after {
@@ -7437,12 +7438,14 @@ html[dir="rtl"] .service-subscribe-area {
   }
 
   .all-cpage-stitle h3 {
-    font-size: 24px;
+    font-size: 36px;
     line-height: 36px;
   }
-
+  .all-cpage-top-section{
+    background-size: 193%;
+  }
   .all-cpage-stitle {
-    margin-bottom: 40px;
+    margin-bottom: 90px;
     margin-top: 0;
     width: 185px;
   }

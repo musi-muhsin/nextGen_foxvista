@@ -374,12 +374,12 @@
         var owl = $(".ss-carousel");
         owl.owlCarousel({
             margin: 0,
-            loop:true,
+            // loop:true,
             autoplay: true,
             responsiveClass: true,
             navigation: true,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            nav: true,
+      
             items: 5,
             smartSpeed: 2000,
             dots: false,
@@ -390,25 +390,27 @@
                     items: 1.2,
                     autoplay: true,
                        mouseDrag : true,
-                       center : true,
-            loop: true,
+                       loop :false,
+
 
                 },
                 480: {
                     items: 3,
                     autoplay: true,
-                   loop: true,
                       mouseDrag : true,
-                    
+                      nav: false,
+                      loop :false,
                 },
                 760: {
                     items: 4,
                     autoplay: true,
-                    loop: true,
                        mouseDrag : true,
+                       nav: true,
+                    
                 },
                 992: {
                     items: 5,
+                    loop : true,
                 }
             }
         });
