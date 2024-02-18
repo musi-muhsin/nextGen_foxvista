@@ -391,7 +391,7 @@
                     autoplay: true,
                        mouseDrag : true,
                        loop :false,
-
+                       center: true,
 
                 },
                 480: {
@@ -400,6 +400,7 @@
                       mouseDrag : true,
                       nav: false,
                       loop :false,
+                      center: true,
                 },
                 760: {
                     items: 4,
