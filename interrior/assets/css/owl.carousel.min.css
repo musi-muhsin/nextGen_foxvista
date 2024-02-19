@@ -60,14 +60,21 @@
     color: #fff;
     text-transform: uppercase;
 }
+.blog-top-area-slider .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    transition:  0.5s ease-in-out;
+    height: 100vh;
+    object-fit: cover;
+}
 .owl-carousel .owl-item img {
     display: block;
     width: 100%;
     transition:  0.5s ease-in-out;
 }
-.owl-carousel .owl-item img:hover {
+/* .owl-carousel .owl-item img:hover {
     scale: 1.2;
-}
+} */
 
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
     display: none

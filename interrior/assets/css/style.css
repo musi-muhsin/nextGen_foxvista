@@ -1050,11 +1050,13 @@ a#scrollUp {
 }
 
 .interior-menu li a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 14px;
   color: #000;
   font-weight: 600;
   display: inline-block;
+  text-transform: uppercase;
+  
 }
 
 .interior-menu li a:hover, .interior-menu li a.highlighted {
@@ -1602,11 +1604,12 @@ nav.isidenav ul li a span.nav-text {
 
 .hero3-text p {
   position: relative;
-  color: #fff;
+  color: #F0D6BA;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 34px;
+
 
 }
 
@@ -1864,7 +1867,7 @@ nav.isidenav ul li a span.nav-text {
 .about-us-area-2 {
   /* background: rgba(0, 0, 0, 0) url(../img/bg/au2-bg.jpg) repeat scroll 0 0; */
   overflow: hidden;
-  padding: 40px 0;
+  padding: 40px 0 60px;
   position: relative;
 }
 
@@ -1900,7 +1903,7 @@ nav.isidenav ul li a span.nav-text {
 .au2-right-text p {
   font-size: 18px;
   color: #4e4e4e;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   font-weight: 500;
 }
 
@@ -3543,12 +3546,12 @@ span.progressText {
 /*   5. Blog-Grid
 /*----------------------------------------*/
 .blog-top-area-slider {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 .blog-top .item {
   position: relative;
-  padding-bottom: 125px;
+  /* padding-bottom: 125px; */
 }
 
 .blog-top .owl-item img {
@@ -3557,10 +3560,10 @@ span.progressText {
 
 .blog-top .owl-dots {
   text-align: center;
-  float: left;
   position: absolute;
-  left: 46%;
-  top: 48%;
+  left: 50%;
+  top: 74%;
+  transform: translateX(-50%);
 }
 
 .blog-top .owl-dot {
@@ -5863,6 +5866,9 @@ ul.sp-list li {
 }
 .sc-text span {
   color: #E5E5E5;
+  text-transform: uppercase;
+  word-break: break-all;
+  font-size: 16px;
 }
 
 .cform-top-text {
@@ -5880,26 +5886,27 @@ ul.sp-list li {
 
 .contact-content-area form {
   text-align: center;
+  margin-bottom: 35px;
 }
 
 .contact-content-area form .form-control::placeholder {
-  color: #fff;
+  color: #6f6f6f;
 }
 .contact-content-area form input {
   margin: 10px auto;
   border-radius: 0px;
-  border: 1px solid #dfdfdf;
+  border: 1px solid #6f6f6f;
   height: 42px;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0px;
   background-color: transparent;
-  color: #fff;
+  color: #6f6f6f;
 }
 .contact-content-area form select {
   margin: 10px auto;
   border-radius: 0px;
-  border: 1px solid #dfdfdf;
+  border: 1px solid #6f6f6f;;
   height: 42px;
   font-size: 15px;
   font-weight: 300;
@@ -5907,19 +5914,19 @@ ul.sp-list li {
   background-color: transparent;
   width: 100%;
   padding: 10px 5px;
-  color: #fff
+  color: #6f6f6f;
 }
 
 .contact-content-area form textarea {
   margin: 10px auto;
   border-radius: 0px;
-  border: 1px solid #dfdfdf;
+  border: 1px solid #6f6f6f;
   background-color: transparent;
   height: 120px;
   font-size: 15px;
   font-weight: 300;
   padding: 10px 15px;
-  color: #fff;
+  color: #6f6f6f;
 
 }
 
@@ -5928,6 +5935,7 @@ ul.sp-list li {
     outline: 0;
     background-color: transparent;
     box-shadow: none;
+    /* color: #fff; */
 }
 .form-control:focus {
   border-color: rgb(255, 255, 255);
@@ -6599,7 +6607,7 @@ html[dir="rtl"] .service-subscribe-area {
 
 @media only screen and (max-width: 1249px) {
   .blog-top .owl-dots {
-    display: none;
+    /* display: none; */
   }
 }
 

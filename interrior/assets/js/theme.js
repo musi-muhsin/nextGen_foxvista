@@ -340,6 +340,7 @@
         var owl = $(".partner-carousel");
         owl.owlCarousel({
             loop: true,
+         
             margin: 20,
             responsiveClass: true,
             navigation: true,
@@ -349,8 +350,11 @@
             smartSpeed: 1500,
             dots: true,
             autoplay: true,
-            autoplayTimeout: 2000,
+            autoplayTimeout: 3000,
             center: false,
+            autoplay: {
+                delay: 0,
+            },
             responsive: {
                 0: {
                     items: 2
@@ -375,7 +379,7 @@
         owl.owlCarousel({
             margin: 0,
             // loop:true,
-            autoplay: true,
+            autoplay: false,
             responsiveClass: true,
             navigation: true,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
@@ -404,16 +408,16 @@
                 },
                 760: {
                     items: 4,
-                    autoplay: true,
+                    autoplay:false,
                        mouseDrag : true,
                        nav: true,
                     
                 },
                 992: {
                     items: 5,
-                    loop : true,
+                    loop :false,
                     nav: true,
-
+                    autoplay:false,
                 }
             }
         });
