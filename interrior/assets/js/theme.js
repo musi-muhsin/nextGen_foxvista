@@ -412,6 +412,8 @@
                 992: {
                     items: 5,
                     loop : true,
+                    nav: true,
+
                 }
             }
         });
