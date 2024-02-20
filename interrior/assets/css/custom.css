@@ -2,6 +2,7 @@
 .navbar li a{
     position: relative;
     padding: 0;
+    transition:  0.3s ease-in-out;
 }
 .navbar li a::before{
     content: "";
@@ -16,13 +17,15 @@
    padding: 0;
    color: #000000;
    font-weight: 600;
+   letter-spacing: normal;
 }
 .navbar li a.active{
     color: #F08B20;
+ 
 }
 .navbar li a:hover::before,
 .navbar li a.active::before{
-    transition: width 0.3s ease-in-out;
+ 
     width: 100%;
 }
 .hero-content .button{
