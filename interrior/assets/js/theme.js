@@ -385,7 +385,7 @@
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
       
             items: 5,
-            smartSpeed: 2000,
+            // smartSpeed: 2000,
             dots: false,
             autoplayTimeout: 4000,
             // center:

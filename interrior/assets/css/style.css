@@ -3564,6 +3564,7 @@ span.progressText {
   left: 50%;
   top: 74%;
   transform: translateX(-50%);
+  width: 100%;
 }
 
 .blog-top .owl-dot {
