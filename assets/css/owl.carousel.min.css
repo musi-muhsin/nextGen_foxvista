@@ -72,9 +72,9 @@
     width: 100%;
     transition:  0.5s ease-in-out;
 }
-/* .owl-carousel .owl-item img:hover {
+.ss-carousel .item img:hover {
     scale: 1.2;
-} */
+}
 
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
     display: none
