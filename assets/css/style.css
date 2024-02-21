@@ -73,9 +73,9 @@ div#preloader {
 }
 
 header.navbar-fixed-top {
-  animation-duration: 0.8s;
+  /* animation-duration: 0.8s;
   animation-name: fadeInDown;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; */
   box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.189);
   left: 0;
   position: fixed !important;
@@ -3563,7 +3563,7 @@ span.progressText {
   text-align: center;
   position: absolute;
   left: 50%;
-  top: 74%;
+  top: 80%;
   transform: translateX(-50%);
   width: 100%;
 }
@@ -3577,7 +3577,7 @@ span.progressText {
 
 .blog-top .owl-dot.active {
   margin-right: 70px;
-  color: #f9ad83;
+  color: #f08b20;
 }
 
 .blog-top .owl-dot.active:after {
