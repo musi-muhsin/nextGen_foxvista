@@ -10,6 +10,14 @@
 */
 // -----------------------------
 
+  // loader 
+  window.onload = function() {
+    setTimeout(function() {
+      console.log('alert');
+      document.getElementById('loadingDiv').style.display = 'none'; 
+    }, 500);
+  };
+
 
 (function($) {
     "use strict";
@@ -494,6 +502,7 @@
             autoplay: false,
             autoplayTimeout: 4000,
             center: true,
+            autoplay: true,
             responsive: {
                 0: {
                     items: 1

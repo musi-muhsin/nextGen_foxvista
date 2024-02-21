@@ -921,6 +921,7 @@ a#scrollUp {
   text-align: center;
   font-size: 16px;
   padding-top: 4px;
+  z-index: 999;
 }
 
 /* -------- KeyFrames -------- */
