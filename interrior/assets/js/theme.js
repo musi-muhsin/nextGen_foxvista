@@ -349,7 +349,7 @@
         owl.owlCarousel({
             loop: true,
          
-            margin: 20,
+            margin: 5,
             responsiveClass: true,
             navigation: true,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
