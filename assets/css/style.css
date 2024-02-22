@@ -6316,6 +6316,24 @@ ul.sp-list li {
 .footer-menu ul li a, .footer-menu ul li span {
   font-size: 14px;
   color: #fff;
+  font-weight: normal;
+}
+.footer-menu ul li a:hover{
+  font-weight: normal;
+  color: white;
+}
+.footer-menu ul li a:hover::before{
+  display: none;
+}
+.footer-menu ul li a.active{
+  color: white;
+}
+.footer-menu ul li a.active
+{
+  color: white;
+}
+.footer-menu ul li a.active::before{
+  background-color: transparent;
 }
 
 .footer-social-icon {
