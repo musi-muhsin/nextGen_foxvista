@@ -10,6 +10,7 @@
 */
 // -----------------------------
 
+
   // loader 
   window.onload = function() {
     setTimeout(function() {
@@ -17,6 +18,71 @@
       document.getElementById('loadingDiv').style.display = 'none'; 
     }, 500);
   };
+
+//   active class nav 
+
+document.addEventListener("DOMContentLoaded", function() {
+    var links = document.querySelectorAll("#interiorMenuV1 a");
+
+    // Function to add or remove "active" class based on the URL
+    function setActiveLink() {
+        var currentUrl = window.location.href;
+        var currentTarget = currentUrl.split("#")[1]; // Get the target from the URL
+        links.forEach(function(link) {
+            var linkUrl = link.getAttribute("href");
+            if ((currentUrl.includes(linkUrl) || (currentTarget && linkUrl.startsWith("#" + currentTarget))) && !(currentTarget === "services" && linkUrl === "index.html")) {
+                link.classList.add("active");
+            } else {
+                link.classList.remove("active");
+            }
+        });
+
+        // Additional logic to handle product details pages
+        if (currentUrl.includes("product-details1.html") || currentUrl.includes("product-details2.html")) {
+            links.forEach(function(link) {
+                if (link.getAttribute("href") === "product.html") {
+                    link.classList.add("active");
+                }
+            });
+        }
+    }
+
+    setActiveLink(); // Call the function initially to set the active link
+
+    links.forEach(function(link) {
+        link.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent default link behavior
+
+            var target = this.getAttribute("href"); // Get the link target
+
+            links.forEach(function(otherLink) {
+                otherLink.classList.remove("active");
+            });
+
+            if (target && target.startsWith("#")) {
+                // Smooth scroll to section
+                var sectionId = target.substring(1);
+                var section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                }
+            } else {
+                // If the target is not a section ID, redirect to the specified page
+                window.location.href = target;
+            }
+
+            // Add "active" class to the clicked link
+            this.classList.add("active");
+        });
+    });
+});
+
+
+
+
+
+
+   
 
 
 (function($) {
@@ -40,6 +106,7 @@
         subMenusSubOffsetX: 6,
         subMenusSubOffsetY: -8
     });
+
 
 
 

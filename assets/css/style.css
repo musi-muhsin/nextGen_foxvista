@@ -921,7 +921,7 @@ a#scrollUp {
   text-align: center;
   font-size: 16px;
   padding-top: 4px;
-  z-index: 999;
+  z-index: 999 !important;
 }
 
 /* -------- KeyFrames -------- */
@@ -1061,7 +1061,7 @@ a#scrollUp {
 }
 
 .interior-menu li a:hover, .interior-menu li a.highlighted {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 14px;
   color: #dcdcdc;
   background-color: rgba(0, 0, 0, 0);
@@ -1868,8 +1868,9 @@ nav.isidenav ul li a span.nav-text {
 .about-us-area-2 {
   /* background: rgba(0, 0, 0, 0) url(../img/bg/au2-bg.jpg) repeat scroll 0 0; */
   overflow: hidden;
-  padding: 40px 0 90px;
+  padding: 40px 0 0;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .au2-left {
@@ -3386,7 +3387,7 @@ span.progressText {
 /*  Insta Carousel Style
 /*----------------------------------------*/
 .social-area {
-  margin: 25px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
 }
 
 .social-title {
@@ -3547,7 +3548,7 @@ span.progressText {
 /*   5. Blog-Grid
 /*----------------------------------------*/
 .blog-top-area-slider {
-  margin-top: 75px;
+  margin-top: 100px;
 }
 
 .blog-top .item {
@@ -5868,9 +5869,9 @@ ul.sp-list li {
 }
 .sc-text span {
   color: #E5E5E5;
-  /* text-transform: uppercase; */
+  text-transform: Uppercase;
   word-break: break-all;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: normal;
 }
 

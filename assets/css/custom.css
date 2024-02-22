@@ -17,7 +17,6 @@
    padding: 0;
    color: #000000;
    font-weight: 600;
-   letter-spacing: normal;
 }
 .navbar li a.active{
     color: #F08B20;
@@ -175,7 +174,18 @@ color: #fff;
     .portfolio-area  .product{
         padding: 0 15px;
     }
-    
+    .blog-details-head {
+        margin-top: 83px;
+    }
+    .blog-top-area-slider{
+        margin-top: 83px;
+    }
+    .social-area{
+        padding: 90px 0px 0px 0px;
+    }
+    .partner-logo {
+        padding: 15px 30px;
+    }
     .products-brands-details .brands{
         display: flex;
         flex-direction: column;
