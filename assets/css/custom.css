@@ -1,4 +1,6 @@
-
+.logo-box .logo img{
+    width: 60%;
+}
 .navbar li a{
     position: relative;
     padding: 0;
@@ -171,6 +173,9 @@ color: #fff;
 }
 
 @media only screen and (max-width: 768px){
+    .logo-box .logo img{
+        width: 100%;
+    }
     .portfolio-area  .product{
         padding: 0 15px;
     }

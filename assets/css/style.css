@@ -80,7 +80,7 @@ header.navbar-fixed-top {
   left: 0;
   position: fixed !important;
   right: 0;
-  top: 0;
+  top: -1px;
   width: 100%;
   z-index: 99999;
 }
@@ -1010,7 +1010,7 @@ a#scrollUp {
 }
 
 .interior-header.navbar-fixed-top {
-  padding: 5px 0px;
+  padding: 10px 0px;
   background-color: #fff;
 }
 
@@ -1030,7 +1030,7 @@ a#scrollUp {
   position: relative;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 9;
   width: auto;
 }
 
@@ -3548,7 +3548,7 @@ span.progressText {
 /*   5. Blog-Grid
 /*----------------------------------------*/
 .blog-top-area-slider {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .blog-top .item {
@@ -4234,7 +4234,7 @@ h4.bs-cat-title {
 /*   8. Blog-Details
 /*----------------------------------------*/
 .blog-details-head {
-  margin-top: 100px;
+  margin-top: 90px;
   background-color: #f1f1f1;
 }
 
@@ -7010,7 +7010,7 @@ html[dir="rtl"] .service-subscribe-area {
 
   .logo-box a.logo {
     display: block;
-    width: 100%;
+    width: 114%;
     margin: 0 auto;
   }
 
@@ -7233,7 +7233,7 @@ html[dir="rtl"] .service-subscribe-area {
 
   .interior-menu {
     position: fixed !important;
-    top: 75px !important;
+    top: 92px !important;
     left: 0px !important;
     background-color: #fff;
     width: 100% !important;
@@ -7241,7 +7241,9 @@ html[dir="rtl"] .service-subscribe-area {
     overflow-y: scroll;
     cursor: pointer;
     padding: 10px;
+  display: none;
   }
+
 
   .ihV3 .interior-menu-wrapper #interiorMenuV1 {
     top: 115px !important;
@@ -7260,7 +7262,7 @@ html[dir="rtl"] .service-subscribe-area {
   }
 
   .interior-menu li a:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    /* background-color: rgba(0, 0, 0, 0.25); */
   }
 
   .interior-header.navbar-fixed-top .logo-box {
